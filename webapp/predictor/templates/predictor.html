@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Lung Disease Detection</title>
+	<link rel="stylesheet" type="text/css" href="/predict.css">
+</head>
+<body>
+	<div id="header">
+		<h2>Detected Conditions Report</h2>
+	</div>
+	<div id="content">
+		<h3>Patient: {{name}}, {{sex}}, {{age}} years</h3>
+		<img src="{{detect_img}}">
+	</div>
+	<div id="footer">
+		<h3>Detected Conditions:</h3>
+		{% if not predictions %}
+			<h4>No conditions detected</h4>
+		{% endif %}
+		{% for pred in predictions %}
+			<h4>{{pred[0]}}, ({{pred[1]}}% confidence)</h4>
+		{% endfor %}
+		<h3>Detection Time:</h3>
+		{{detect_time}}
+	</div>
+</body>
+</html>

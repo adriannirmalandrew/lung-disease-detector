@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Lung Disease Detection</title>
+	<link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+	<div id="header">
+		<h2>Lung Disease Detection</h2>
+	</div>
+	<div id="content">
+		<form action="/predictor" method="post" enctype="multipart/form-data">
+			<label for="name">Name:</label>
+			<input id="name" type="text" name="name" required>
+			<br>
+			<label for="age">Age:</label>
+			<input id="age" type="number" name="age" required>
+			<br>
+			<label for="sex">Sex:</label>
+			<input id="sex" type="radio" name="sex" value="Male" required>Male
+			<input id="sex" type="radio" name="sex" value="Female" required>Female
+			<br>
+			<label for="xray">Upload X-Ray image:</label>
+			<input id="xray" type="file" name="xray" required>
+			<br>
+			<input type="submit" value="Detect Symptoms">
+		</form>
+	</div>
+	<div id="footer">
+		<h3>By: Adrian Nirmal Andrew 18BCE1164,</h3>
+		<h3>N Mruthunidhi 17BME1064</h3>
+		<h4>Course: CSE3013 (Dr Priyadarshini J)</h4>
+	</div>
+</body>
+</html>

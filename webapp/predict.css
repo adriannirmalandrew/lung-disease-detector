@@ -1,0 +1,47 @@
+body {
+	font-family: sans-serif;
+	background-color: #555555;
+	margin: auto;
+	padding: 1%;
+}
+
+div {
+	border-radius: 10px;
+}
+
+#header {
+	background-color: #dddfdf;
+	padding: 0.1%;
+	width: 30%;
+	margin-top: 0.5%;
+	margin: auto;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+#content {
+	background-color: #dddfdf;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 35%;
+	margin: auto;
+	text-align: center;
+}
+
+form {
+	padding: auto;
+}
+
+label, input {
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+#footer {
+	background-color: #dddfdf;
+	padding: 0.1%;
+	width: 30%;
+	margin: auto;
+	margin-top: 1%;
+	text-align: center;
+} 
